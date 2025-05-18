@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual - Calculadora de Operações Matemáticas</title>
+    <title>Manual - Calculadora de Sequências Matemáticas</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -77,27 +77,30 @@
 <body>
     <header>
         <h1>Manual do Usuário</h1>
-        <h2>Calculadora de Operações Matemáticas</h2>
+        <h2>Calculadora de Sequências Matemáticas</h2>
         <p>Desenvolvido por Lizards.DBA</p>
     </header>
 
     <div class="section">
         <h2>1. Introdução</h2>
-        <p>Bem-vindo à <strong>Calculadora de Operações Matemáticas</strong>, uma ferramenta desenvolvida pelo grupo <strong>Lizards.DBA</strong> para auxiliar no cálculo de diversas sequências matemáticas.</p>
+        <p>Bem-vindo à <strong>Calculadora de Sequências Matemáticas</strong>, uma ferramenta desenvolvida pelo grupo <strong>Lizards.DBA</strong> para auxiliar no cálculo de diversas sequências matemáticas.</p>
         
         <p>Este programa oferece um <strong>menu interativo</strong> com 10 opções de sequências numéricas, permitindo que o usuário realize cálculos de forma rápida e intuitiva.</p>
         
         <div class="note">
-            <strong>Operações disponíveis:</strong>
+            <strong>Sequências disponíveis:</strong>
             <ul>
+                <li>Sequência de Fibonacci (opção 1)</li>
                 <li>Números Triangulares (opção 2)</li>
                 <li>Sequência de Números Primos (opção 3)</li>
                 <li>Sequência Fatorial (opção 4)</li>
                 <li>Sequência de Quadrados Perfeitos (opção 5)</li>
+                <li>Sequência de Cubos (opção 6)</li>
                 <li>Sequência Geométrica (opção 7)</li>
                 <li>Sequência Alternada (opção 8)</li>
+                <li>Sequência de Tribonacci (opção 9)</li>
+                <li>Informações do Projeto (opção 10)</li>
             </ul>
-            <p>As demais opções estão em construção ou serão implementadas em breve.</p>
         </div>
     </div>
 
@@ -109,7 +112,7 @@
         
         <div class="menu-example">
 -----------Projeto API 2025-1----------
--Calculadora de Operacoes Matematicas-
+-Calculadora de Sequencias Matematicas-
 ---------------------------------------
 
 Digite seu nome para continuar: [Seu Nome]
@@ -122,7 +125,7 @@ Digite seu nome para continuar: [Seu Nome]
         
         <div class="menu-example">
 --------------------------------------------------------
-                Menu de Operacoes Matematicas   
+                Menu de Sequencias Matematicas   
 --------------------------------------------------------
 Olá, [Seu Nome]! Escolha uma opção para continuar:
 
@@ -138,16 +141,31 @@ Olá, [Seu Nome]! Escolha uma opção para continuar:
 10- Informacoes do Projeto  
 0- Fechar  
 
-Escolha uma operacao: [Número da Opção]
+Escolha uma sequencia para iniciar: [Número da Opção]
         </div>
     </div>
 
     <div class="section">
-        <h2>3. Operações Disponíveis</h2>
+        <h2>3. Sequências Disponíveis</h2>
         
         <div class="section">
-            <h4>Opção 1 - Sequencia de Fibonacci</h4>
-            <p><strong>Módulo em construção!</strong></p>
+            <h3>Opção 1 - Sequência de Fibonacci</h3>
+            <p>Gera a sequência de Fibonacci até um termo máximo especificado.</p>
+            
+            <p><strong>Como usar:</strong></p>
+            <ol>
+                <li>Digite o <strong>termo máximo</strong> da sequência</li>
+                <li>O programa exibirá a sequência começando por 0, 1, 1, 2, 3, 5...</li>
+            </ol>
+            
+            <div class="code">
+Exemplo de saída:
+------------------------------------------
+        Sequencia de Fibonacci            
+------------------------------------------
+Informe o termo maximo da Sequencia Fibonacci: 5
+0 1 1 2 3 5 8 
+            </div>
         </div>
         
         <div class="section">
@@ -234,7 +252,7 @@ Exemplo de saída:
 ----------------------------------------
      Sequencia de Quadrados Perfeitos    
 ----------------------------------------
-Insira o número limite da sequência: 3
+Insira o numero limite da sequencia: 3
 1 * 1 = 1
 2 * 2 = 4
 3 * 3 = 9
@@ -242,8 +260,29 @@ Insira o número limite da sequência: 3
         </div>
         
         <div class="section">
-            <h4>Opção 6 - Sequencia de Cubos</h4>        
-            <p><strong>Módulo em construção!</strong></p>
+            <h3>Opção 6 - Sequencia de Cubos</h3>
+            <p>Calcula os cubos dos números até um limite especificado.</p>
+            
+            <p><strong>Como usar:</strong></p>
+            <ol>
+                <li>Digite o <strong>número limite</strong> da sequência</li>
+                <li>O programa exibirá cada número elevado ao cubo</li>
+            </ol>
+            
+            <div class="code">
+Exemplo de saída:
+-----------------------------------------
+        Sequencia de Cubos               
+-----------------------------------------
+
+Digite um número para o limite da sequência: 3
+
+1³ = 1
+
+2³ = 8
+
+3³ = 27
+            </div>
         </div>
         
         <div class="section">
@@ -263,9 +302,9 @@ Exemplo de saída:
 -----------------------------------------
         Sequencia Geometrica             
 -----------------------------------------
-Informe o primeiro termo da sequência: 2
-Informe a razão: 3
-Informe o limite da sequência: 4
+Informe o primeiro termo da sequencia: 2
+Informe a razao: 3
+Informe o limite da sequencia: 4
 2 * 3 = 6
 6 * 3 = 18
 18 * 3 = 54
@@ -291,9 +330,9 @@ Exemplo de saída:
 -----------------------------------------
 
 Digite um numero para variavel N: 2
-Digite um limite para conhecer a Sequencia Alternada: 3
+Digite um limite para sequencia: 3
 
-Sua sequencia alternada sao: 
+Sequencia alternada: 
 
 -----------------------------------------------------------------
 -4 9 -16
@@ -302,8 +341,23 @@ Sua sequencia alternada sao:
         </div>
         
         <div class="section">
-            <h4>Opção 9 - Sequencia de Tribonacci</h4>        
-            <p><strong>Módulo em construção!</strong></p>
+            <h3>Opção 9 - Sequencia de Tribonacci</h3>
+            <p>Gera a sequência de Tribonacci até um termo máximo especificado.</p>
+            
+            <p><strong>Como usar:</strong></p>
+            <ol>
+                <li>Digite o <strong>termo máximo</strong> da sequência</li>
+                <li>O programa exibirá a sequência começando por 0, 0, 1, 1, 2, 4...</li>
+            </ol>
+            
+            <div class="code">
+Exemplo de saída:
+----------------------------------------
+        Sequencia de Tribonacci          
+----------------------------------------
+Informe o termo maximo da Sequencia Tribonacci: 5
+0 1 1 2 4 7 13 
+            </div>
         </div>
         
         <div class="section">
@@ -359,10 +413,11 @@ Sua escolha: [opção]
     <div class="section">
         <h2>5. Considerações Finais</h2>
         <ul>
-            <li>O programa <strong>não aceita valores negativos ou acima de 10</strong> no menu principal</li>
+            <li>O programa <strong>não aceita valores negativos</strong> como entrada para as sequências</li>
             <li>Sempre que uma operação for concluída, você pode <strong>escolher continuar ou sair</strong></li>
             <li>Para <strong>reiniciar</strong>, feche e abra o programa novamente</li>
             <li>Algumas operações podem ter limitações de tamanho de entrada devido às capacidades do sistema</li>
+            <li>O projeto foi desenvolvido para a disciplina de Algoritmos do curso de Banco de Dados 2025-1</li>
         </ul>
     </div>
 
